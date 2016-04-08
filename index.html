@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/3.png','imagenes/15.png','imagenes/2.png','imagenes/6.png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>SEMANA SANTA</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+     <div align="center">
+     <img src="imagenes/letrero.png" width="100%" height="200px">
+     </div>
+  </div>
+    
+<div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>SIGNIFICADO DE LA SEMANA SANTA</h2>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>DOMINGO DE PASCUA</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>¿COMO SE ESTABLECE LA FECHA DE SEMANA SANTA?</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CELEBRACIÓN EN ATLIXCO</h2>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CELEBRACIÓN EN IZTAPALAPA</h2>
+       </a>
+      </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CELEBRACIÓN EN EL VATICANO</h2>
+       </a>
+      </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CELEBRACIÓN EN JERUSALEN</h2>
+       </a>
+      </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>CELEBRACIÓN EN PERÚ</h2>
+       </a>
+      </li>
+    </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicacion Dos</h4>
+     <h4>Misael Rodriguez Mendez</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>SIGNIFICADO DE LA SEMANA SANTA</h1>
+    </div>
+    <div data-role="content" align="center">
+    <p>Semana Santa, conocida como semana mayor, es un período de 7 días que comienza con el Domingo de Ramos y culmina con el Domingo de Resurrección. Con la Semana Santa, el cristiano conmemora el Triduo Pascual, es decir, los momentos de la Pasión, la Muerte y la Resurrección de Jesucristo.</p>
+    <br>
+    <p>La Semana Santa está precedida por la Cuaresma que se refiere al tiempo de preparación donde se recuerda los 40 días de Jesucristo en el desierto. Las celebraciones centrales de la Semana Santa son: Jueves Santo, Viernes Santo, Sábado Santo y Domingo de Resurrección.</p>
+    <img src="imagenes/s1.png" width="50%" height="50%">
+    <br>
+    <p>A continuación se muestra una breve descripción de cada día:</p>
+     <div data-role="collapsible">
+        <h2>Jueves Santo</h2>
+     <div align="center">
+     <p>Como tal, el Jueves Santo celebra la última cena de Jesús de Nazaret con sus discípulos, la institución de la eucaristía, la orden sacerdotal y, el lavatorio de pies. En este día, los católicos realizan la visita de los siete templos o iglesias, con el objetivo de agradecer a Dios el don de la eucaristía y sacerdocio.</p>
+     <img src="imagenes/jueves.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible" >
+        <h2>Viernes Santo</h2>
+     <div align="center">
+     <p>El Viernes Santo, recuerda la Pasión de Cristo, momento de su crucifixión en el Calvario, por salvar al hombre del pecado y darle vida entera. Se celebra con un viacrucis y con la adoración de la Cruz.</p>
+     <img src="imagenes/viernes.png" width="50%" height="50%">
+     </div>
+     </div>
+     <div data-role="collapsible">
+        <h2>Sábado Santo</h2>
+     <div align="center"> 
+     <p>Se conoce como Sábado Santo el día entre la muerte y la resurrección de Jesús. En este día, se lleva a cabo una vigilia pascual, en la cual se acostumbra bendecir el agua y encender las velas en señal de la Resurrección de Jesús.</p>
+     <img src="imagenes/sabado.png" width="50%" height="50%">
+     </div>
+     </div>
+     
+     <div data-role="collapsible">
+        <h2>Domingo Santo</h2>
+     <div align="center"> 
+     <p>El Domingo Santo, conocido como Domingo de Pascua. En el Domingo Santo, se conmemora la resurrección de Jesucristo al tercer día después de su crucifixión y, su primera aparición a los discípulos. Este día es de suma alegría para los fieles y, es interpretado como la esperanza de una nueva vida.</p>
+     <img src="imagenes/domingo.png" width="50%" height="50%">
+     </div>
+     </div>
+     </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>DOMINGO DE PASCUA</h1>
+    </div>
+    <div data-role="content" align="center">
+    <img src="imagenes/pascua1.png" width="50%" height="auto">
+    <p>Pascua es la celebración más importante de la Iglesia Cristiana, donde se conmemora la Resurrección de Jesucristo al tercer día después de haber sido crucificado, según los evangelios canónicos.La Pascua forma parte de la Semana Santa donde en el "Viernes Santo" se celebra la crucifixión de Jesús, y en el "Domingo de Pascua" se celebra la Resurrección y su primera aparición a sus discípulos.</p>
+    <p>El "Domingo de Pascua" es una fiesta móvil, el día varía cada año y no se fija en relación al calendario civil, y sucede después de la primera luna llena en el inicio de la primavera en el hemisferio Norte. La Pascua siempre se celebra entre el 22 de Marzo y el 25 de Abril, se celebra en varios países y en cada uno posee un nombre diferente, como por ejemplo: los portugueses la llaman Páscoa, los italianos la llaman Pasqua, y los franceses Pâques</p>
+     <div data-role="collapsible">
+        <h2>Simbolos de la Pascua</h2>
+        <div>
+        <p>Uno de los símbolos de la Pascua es el conejo. Este animal se convirtió en un símbolo porque en la antigüedad, en el hemisferio Norte, la celebración fue precisamente a finales del invierno y principios de la primavera, cuando los animales aparecían en los campos con sus cachorros, era la época de la fertilidad.</p>
+        <p>El huevo también es un símbolo de la Pascua, representa el inicio de la vida. En varios países se regalan huevos de chocolate a los amigos, deseándoles un buen paso hacia una vida feliz.</p>
+        <br>
+        <img src="imagenes/pascua2.png" width="50%" height="50%">
+        </div>
+        </div>
+     </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+    </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>FECHA DE LA SEMANA SANTA</h1>
+    </div>
+    <div data-role="content" align="center">
+    <p>Probablemente usted habrá notado que la fecha de la Semana Santa varía considerablemente de un año al siguiente. Esta fecha se escoge a partir de una fórmula establecida por el Emperador Romano Constantino el Grande y el Concilio de Nicea en 325 d. C. Usted puede usar la fórmula para verificar la fecha de Pascua cada año.</p>
+    <p>En primer lugar debe hallar el equinocio vernal, o primer día de primavera ( alrededor del 21- 22 de marzo ), en un calendario que incluya datos astronómicos básicos. Después busque la siguiente luna llena, normalmente está indicada en una esquina del calendario. La Semana Santa caerá el domingo siguiente.</p>
+     <div data-role="collapsible">
+        <h2>Fecha mas tardía y temprana para Semana Santa</h2>
+       <div>
+        <p>De acuerdo con esta regla, la fecha más tardía posible para Semana Santa sería el 25 de Abril, la próxima ocurrencia será en 2038. La más temprana el 22 de Marzo, en 2285.</p>
+        </div>
+     </div>
+     </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>ATLIXCO</h1>
+    </div>
+    <div data-role="content" align="center">
+    <h3>El recorrido de los engrillados y la procesión del silencio en Atlixco</h3>
+    <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/4.png',0)"><img src="imagenes/letrero.png" width="70%" height="250px" id="Image22"></a></p>
+    <p>La conmemoración de Semana Santa en el municipio de Atlixco destaca principalmente por 2 eventos: el recorrido de los engrillados y la procesión del silencio; ambos logran atraer a miles de visitantes año tras año debido a que son actividades únicas en su tipo.</p>
+     <div data-role="collapsible">
+        <h2>Los engriñados</h2>
+       <div>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/3.png',1)"><img src="imagenes/letrero.png" width="70%" height="250px" id="Image23"></a></p>
+        <p>Los engrillados son hombres que para pagar una penitencia o agradecer un milagro, recorren más de 3 kilómetros de calles del municipio, en su camino deben ir descalzos, cargando en sus hombros cadenas de más de 100 kilos, con espinas incrustadas en su cuerpo, vistiendo únicamente una capucha y un calzoncilllo negros. </p>
+        <p>Aunado a lo anterior, lo único que pueden consumir durante su marcha son limones, para mantenerse hidratados, mientras que algunas personas les acomodan las cadenas, o por segundos, les ayudan con el peso de éstas.</p>
+        <p>Cada penitente lleva en sus manos una charola en la que quienes atestiguan el acto colocan monedas, al final del día, ese dinero es donado a la iglesia.</p>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/15.png',1)"><img src="imagenes/letrero.png" width="70%" height="250px" id="Image24"></a></p>
+        </div>
+     </div>
+  
+     <div data-role="collapsible">
+        <h2>La procesión del silencio</h2>
+        <div>
+        <p>Otro de los atractivos del municipio de Atlixco durante Semana Santa es la procesión del silencio que se ha llevado a cabo desde hace 20 años.</p>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/2.png',1)"><img src="imagenes/letrero.png" width="70%" height="250px" id="Image25"></a></p>
+        <p>Esta procesión considerada una de las más grandes del estado espera reunir a más de 10 mil personas a lo largo de su recorrido de más de 8 kilómetros. La reunión comienza en la junta auxiliar de Santa Lucía Cosamaloapan y termina en la colonia de Nexatengo, cargando en su mayoría por jóvenes, las imágenes de Jesús de Nazaret, Jesús Crucificado y La Dolorosa.</p>
+        <p>Los que participan cargando las imágenes  deben haberse confesado, los hombres van  vestidos de negro y las mujeres con falda morada y blusa blanca.</p>
+        <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/6.png',1)"><img src="imagenes/letrero.png" width="70%" height="250px" id="Image26"></a></p>
+       </div>
+     </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>IZTAPALAPA</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h3>Via Crucis de Iztapalapa</h3>
+     <p>Los Festejos de Semana Santa de Iztapalapa son Patrimonio Cultural Intangible de la Ciudad de México. Desde hace 172 años, millones de mexicanos y turistas extranjeros han rememorado en el Cerro de la Estrella de Iztapalapa, la pasión de Cristo, la historia de cómo el hijo de Dios sufrió por el perdón de los pecados de la humanidad.</p>
+      <p>Desde 1843 en el Cerro de la Estrella o Huizachtepetl se conmemora la Pasión de Cristo. Diez años atrás, en 1833, los pobladores afectados y preocupados por la epidemia que azolaba a su comunidad, invocaron las imágenes de Cristo que se  veneraban en sus respectivas ermitas de los barrios originales de Iztapalapa para que terminara la ola de muerte que se cernía entre sus familiares. A los pocos días, según cuenta la historia, la mortandad por el cólera cesó. Además del milagro de haber parado la epidemia, en San Lorenzo, uno de los pueblos de Iztapalapa, el Cristo invocado los favoreció con un agua milagrosa, pues del pie de un ahuehuete brotó un manantial y con el agua que de ahí emanó curaron a los enfermos y a la gente de los pueblos del sur</p>
+      <img src="imagenes/iz1.png" width="50%" height="50%">
+      <p>La representación del Vía Crucis en Iztapalapa comienza con el Domingo de Ramos, con la bendición de las Palmas en la Parroquia de San Lucas, y la Entrada Triunfal de Jesús de Nazaret a Jerusalén, en el santuario del Señor de la Cuevita. El jueves Santo: se celebra la procesión por las principales calles emulando la visita a las Siete Casas, que en este caso es a los ocho barrios; la última cena; el lavatorio en el Jardín Cuitláhuac; la Oración en el Huerto de los Olivos y la Aprehensión, en el Cerro de la Estrella. El Viernes Santo día de la Tragedia Litúrgica: El Juicio: Presentación del Nazareno ante Poncio Pilatos; los clarines anuncian que El Redentor ha sido condenado: Azotes y Coronación se escenifican en la explanada del Jardín Cuitláhuac.</p>
+      <img src="imagenes/iz2.png" width="50%" height="50%">
+      <p>Acto seguido, inicia el Vía Crucis rumbo al Gólgota (Cerro de la Estrella): en este trayecto se representan las tres caídas, la primera en la calle de Ayuntamiento (calle de Cuauhtémoc) las otras dos en la Calle de Hidalgo y Estrella, se escenifican los demás pasos al Calvario. Cientos de Nazarenos que también llevan a cuestas su cruz y corona de espinas, centuriones, soldados romanos y heraldos abren paso al Mecías acompañado por sus discípulos, vírgenes y samaritanos; detrás los clarines y una banda tocan la Marcha Dragona. Crucifixión con los villanos Dimas y Gestas, la presencia de Judas en la horca; a las tres de la tarde, da fin esta representación de la Pasión y muerte del Hijo del Hombre en el Cerro de la Estrella en Iztapalapa.</p>
+      <img src="imagenes/iz3.png" width="50%" height="50%">
+     </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>EL VATICANO</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <p>Roma es el principal destino italiano para conmemorar la semana de Pascua sobre todo debido a los eventos que tienen lugar en el Vaticano.</p>
+     <img src="imagenes/va1.png" width="50%" height="50%">
+     <p>La Semana de Pascua comienza el Domingo de Ramos, con la misa especial que encabeza el Papa en la Plaza de San Pedro. Este evento suele ser muy concurrido y muchas veces es difícil de conseguir un lugar. Si deseas asistir a la misa del Domingo de Ramos lo mejor es llegar temprano.</p>
+     <p>La Bendición de los ramos, procesión y Santa Misa del Domingo de Ramos tiene lugar por la mañana, por lo general a partir de las 09:30, en la Plaza de San Pedro.</p>
+     <p>El Jueves Santo se celebra una Misa en la Basílica de San Pedro, por lo general a las 9:30 AM. El Viernes Santo la misa papal tiene lugar en la Basílica de San Pedro a las 17:00 horas. Por la noche se realiza el Vía Crucis, cerca el Coliseo de Roma, a partir de las 21:15.Las estaciones del viacrucis se colocaron en el Coliseo en 1744 por el Papa Benedicto XIV. Se trata de una procesión muy emotiva y popular. Miles de  creyentes y turistas asistirán a este evento.</p>
+     <img src="imagenes/va2.png" width="50%" height="50%">
+     <p>La Misa Papal y vigilia de Pascua se celebran en el Sábado Santo a las 21:00 horas en la Basílica de San Pedro. Al mediodía, el Papa emite el mensaje de Pascua y la bendición en el balcón central de la Basílica de San Pedro.</p>
+     <p>El Domingo de Pascua también se celebra una Misa Papal en San Pedro y luego los romanos católicos acostumbran ir a sus casas y continuar la cuaresma, la cual se levanta el lunes. Este día suele más jovial que los solemnes eventos anteriores.El lunes muchos italianos se vuelcan a los parques y es muy habitual verlos celebrar en familia realizando un picnic. Finalmente en Castel Sant'Angelo en la ciudad del Vaticano, un enorme despliegue de fuegos artificiales sobre el río Tíber concluyen las conmemoraciones de Semana Santa con la quema de los judas.</p>
+     <img src="imagenes/va3.png" width="50%" height="50%">
+     </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>JERUSALEN</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <p>Oficialmente, Semana Santa comienza al conmemorarse la entrada de Jesús en Jerusalén el Domingo de Ramos (1 de abril), con la misa matinal de las 8 en la Iglesia del Santo Sepulcro y la tradicional procesión de Palmas durante la tarde. Más tarde, a las 14.30, miles de cristianos de todo el mundo marcharán jubilosamente desde Betfagé, rezando y cantando en todos los idiomas, descendiendo por la ladera occidental del Monte de los Olivos en camino a la Ciudad Vieja, a través del valle de Kidrón.</p>
+     <img src="imagenes/je1.png" width="50%" height="50%">
+     <p>El Jueves Santo, el Patriarca Latino de Jerusalén celebrará a las 8 de la mañana la Institución de la Eucaristía en el Santo Sepulcro y por la tarde, a las 15.30, los Franciscanos efectuarán su peregrinación tradicional al Cenáculo (la Sala Superior) en el Monte Sion. Por la noche, a partir de las 21 horas, peregrinos y cristianos locales velarán con Jesucristo durante una hora sagrada de meditación en el Huerto de Getsemaní, seguida de una procesión a la luz de velas a la iglesia de San Pedro en Gallicantu, que según la tradición es el lugar en el que Jesús pasó la noche después de ser arrestado.</p>
+     <img src="imagenes/je2.png" width="50%" height="50%">
+     <p>En Viernes Santo, a las 8 de la mañana, se conmemorarán la Pasión del Señor y la crucifixión en el Calvario, seguidas del Vía Crucis en la Vía Dolorosa a las 11.30, liderado por el Custos (Custodio) franciscano de Tierra Santa.  Posteriormente, a las 8.10 de la mañana, se celebrará el funeral de Cristo en el Sepulcro, un evento exclusivo de la Iglesia de Jerusalén, que reconstruye la deposición del cuerpo de Cristo en la tumba.</p>
+     <p>La tan esperada Vigilia Pascual, el punto culminante de la semana, se celebrará el sábado a las 7.30 de la mañana en la Basílica de la Resurrección, seguida de la entrada solemne del Patriarca a las 15.30 y e oficios religiosos vespertinos a las 18 horas.</p>
+     <p>El Domingo de Resurrección, se celebrará una misa a las 8 de la mañana, con una procesión alrededor de la tumba de Jesús y la procesión diaria, que tendrá lugar a las 17 horas.</p>
+     <img src="imagenes/je3.png" width="50%" height="50%">
+     </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>PERÚ</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+     <h3>Semana Santa en Ayacucho,Peru</h3>
+     <p>Ayacucho se llena de color, tradición popular, fervor religioso, música, redención y luces. Destacan sus 33 iglesias y casonas coloniales, sus tradiciones tanto como su folclore. Cuando se inicia la Semana Santa, la ciudad se moviliza para participar en procesiones, ceremonias, ferias gastronómicas, actividades culturales y artísticas. Toda la comunidad participa del evento y llegan visitantes de todas las partes del Perú y del mundo; ya que es considerada la segunda ciudad importante después de Sevilla (España) para realizar esta festividad religiosa.</p>
+     <img src="imagenes/peru1.png" width="50%" height="50%">
+     <p>Semana Santa en Ayacucho, forma parte de la tradición en Perú. Se realiza un sincretismo mágico, donde se incorpora el mundo andino con su magia y tradiciones en conjunción con la religiosidad católica.</p>
+     <p>Es la festividad más importante de la región ayacuchana y una de las más sobresalientes de América Latina. La celebración se inicia con la procesión del Señor de la Agonía, la Virgen Dolorosa, la Verónica y San Juan</p>
+     <p>Sábado de pasión, se realiza la escenificación de la pasión de Cristo y se reparten las palmas de forma gratuita al público asistente.</p>
+     <img src="imagenes/peru2.png" width="50%" height="50%">
+     <p>Domingo de Ramos, sale el Cristo en un burro, las llamas llevan retama seca que será quemada el Domingo de resurreción. El Lunes sale la procesión el Señor del huerto, el martes el Señor de la Sentencia, miércoles se representa el encuentro entre Cristo, su madre y María Magdalena y el jueves se visitan las iglesias.</p>
+     <p>El viernes Santo la procesión del santo Selpulcro y el sábado de gloria, es la pascua y se celebra la festividad en todo su esplendor. La feria llega a su máximo en el Cerrito de Acuchimay.</p>
+     <img src="imagenes/peru3.png" width="50%" height="50%">
+     <p>Domingo de Resurrección, la procesión más importante. Llevan al Cristo en andas, iluminado por velas y se quema la retama. Mientras la gente baila y canta alrededor en la plaza. Además uno de los platos más celebrados es la patasca o patashca acompañado de unas chaplas.</p>
+     </div>
+    </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Misael Rodriguez Mendez</h4>
+  </div>
+</div>
+</div>
+
+</body>
+</html>
